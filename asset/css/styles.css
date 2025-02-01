@@ -82,17 +82,53 @@ h3 {
     line-height: 1;
 }
 
+p {
+    margin-bottom: 0rem;
+}
+
 span {
     font-family: ArchivoNarrow;
 }
 
 section {
+    margin-bottom: var(--spacing-6);
+}
+
+.banner {
+    width: 60%;
+    /* padding-top: var(--spacing-3); */
+    padding-bottom: var(--spacing-3);
+    padding-right: 8px;
+    border-bottom: 1px solid white;
     margin-bottom: var(--spacing-5);
 }
+
+.icon-category-container {
+    gap: var(--spacing-2);
+}
+
+.single-icon {
+    border: 1px solid white;
+    border-radius: var(--spacing-2);
+    aspect-ratio: 1 / 1;
+}
+
+.single-icon img {
+    width: var(--spacing-5);
+    height: auto;
+}
+
 
 /* section>.container {
     margin-top: var(--spacing-5);
 } */
+
+
+/*********** section: navbar ***********/
+
+.navbar-section {
+    margin-top: var(--spacing-4);
+}
 
 .navbar-section .container {
     padding-top: var(--spacing-3);
@@ -101,9 +137,7 @@ section {
     border-radius: var(--spacing-1);
 }
 
-.navbar-section {
-    margin-top: var(--spacing-4);
-}
+/*********** section:header ***********/
 
 .header-section .row {
     gap: var(--spacing-4);
@@ -118,51 +152,39 @@ section {
     font-size: 1.25rem;
 }
 
-.banner {
-    width: 60%;
-    /* padding-top: var(--spacing-3); */
-    padding-bottom: var(--spacing-3);
-    padding-right: 8px;
-    border-bottom: 1px solid white;
-    margin-bottom: var(--spacing-4);
-}
-
 .personal-img-container {
     overflow: hidden;
-}
-
-.stack-category{
-    margin-top: var(--spacing-4) !important;
-}
-
-.stack-category-title{
-    margin-bottom: var(--spacing-3);
-}
-
-.icon-container {
-    gap: var(--spacing-2);
-}
-
-.single-icon {
-    border: 1px solid white;
-    border-radius: var(--spacing-2);
-    aspect-ratio: 1 / 1;
-}
-
-.icon-container img {
-    width: var(--spacing-5);
-    height: auto;
 }
 
 .header-section p {
     font-family: LeagueGothic;
 }
 
-.single-project-container {
-    margin-top: var(--spacing-4) !important;
+/*********** section: stack ***********/
+
+.all-stack-categories {
+    gap: var(--spacing-4);
 }
 
-.single-project-img{
+.stack-category {
+    /* margin-top: var(--spacing-4) !important; */
+}
+
+.stack-category-title {
+    margin-bottom: var(--spacing-3);
+}
+
+/*********** section: projects ***********/
+
+.all-projects {
+    gap: var(--spacing-4);
+}
+
+.single-project-container {
+    /* margin-top: var(--spacing-4) !important; */
+}
+
+.single-project-img {
     border-radius: var(--spacing-2);
     overflow: hidden;
 }
@@ -180,13 +202,28 @@ section {
 .project-description-title {
     font-size: var(--spacing-4);
     font-weight: 500;
-    margin-bottom: var(--spacing-2);
+    margin-bottom: var(--spacing-1);
 }
 
-
+/*********** section: get in touch ***********/
 
 .getintouch-text {
     font-size: var(--spacing-4);
+}
+
+.all-icons-container-getintouch{
+    margin-bottom: var(--spacing-4) !important;
+}
+
+.single-icon-getintouch{
+    border: 1px solid white;
+    border-radius: var(--spacing-2);
+    aspect-ratio: 1 / 1;
+}
+
+.single-icon-getintouch img{
+    width: var(--spacing-4);
+    height: auto;
 }
 
 input,
@@ -194,6 +231,7 @@ textarea {
     background-color: inherit;
     border-radius: var(--spacing-2);
     border: 1px solid white !important;
+    margin-bottom: var(--spacing-2);
 }
 
 div.form-floating {
@@ -255,30 +293,6 @@ input[type=submit] {
     border-radius: var(--spacing-2);
 }
 
-@media (min-width: 577px) {
-
-/*
-
-    .icon-container {
-        border: 1px solid white;
-        border-radius: var(--spacing-2);
-    } */
-
-    /* .icon-container img {
-        width: var(--spacing-4);
-        height: auto;
-    } */
-}
-
-
-@media (min-width: 769px) {}
-
-
-p {
-    margin-bottom: 0rem;
-}
-
-
 .btn-test {
     --bs-btn-bg: var(--color-primary);
     --bs-btn-color: var(--color-text-light);
@@ -326,8 +340,6 @@ p {
     transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out;
 }
 
-
-
 /*
 .form-input {
     width: 100%;
@@ -351,3 +363,21 @@ p {
 }
 
  */
+
+@media (min-width: 577px) {
+
+    /*
+    
+        .icon-container {
+            border: 1px solid white;
+            border-radius: var(--spacing-2);
+        } */
+
+    /* .icon-container img {
+            width: var(--spacing-4);
+            height: auto;
+        } */
+}
+
+
+@media (min-width: 769px) {}
